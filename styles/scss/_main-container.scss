@@ -1,0 +1,40 @@
+.main-container {
+  background-color: #fafafb;
+  min-height: 100%;
+
+  .main-wrap {
+    max-width: 1000px;
+    width: 85%;
+    margin: 0 auto;
+
+    .mobile-header {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 70px;
+
+      .mobile-header-wrapper {
+        // display: flex;
+        // justify-content: space-around;
+        // align-items: center;
+
+        .title {
+          width: 300px;
+
+          h1 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+          }
+
+          p {
+            color: $darkish-gray;
+            font-size: 14px;
+          }
+        }
+
+        .sidebar-trigger-btn {
+          @include btn-styles;
+        }
+      }
+    }
+  }
+}

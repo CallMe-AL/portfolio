@@ -1,0 +1,39 @@
+$light-text: rgb(70, 70, 70);
+$darkish-gray: #4f5354;
+$light-border: #d2d4d6;
+
+@mixin slow-transition {
+  transition: all 0.3s linear;
+}
+
+@mixin btn-styles {
+  width: 65px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 3px $darkish-gray;
+
+  @include slow-transition;
+
+  .fas {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    background-color: lightgray;
+  }
+}
+
+@mixin card-styles {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid $light-border;
+  border-radius: 6px;
+  margin-bottom: 60px;
+  padding: 20px 20px 40px 20px;
+  box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
+}

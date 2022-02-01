@@ -5,10 +5,218 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/css/main.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <title>Alex's Portfolio</title>
 </head>
 <body>
-  <h1>Hi!</h1>
+  <div class="page-wrap">
+    <div class="sidebar-bg-overlay"></div>
+    <!-- mobile button -->
+    <div class="menu-container" aria-label="open menu">
+      <div class="top-bar"></div>
+      <div class="middle-bar"></div>
+      <div class="bottom-bar"></div>
+    </div>
+    <aside class="sidebar">
+      <div class="sidebar-container">
+        <div class="img-container">
+          <img class="profile-img" src="imgs/head-shot-smaller.png" alt="A head shot of Alex Indovina">
+        </div>
+        <div class="main-bio">
+          <h1>Alex Indovina</h1>
+          <p class="bio-desc">A Front End Developer with a Master's in History and a stereotypical passion for craft beer.</p>
+        </div>
+        <div class="skills">
+          <h5>SKILLS</h5>
+          <ul>
+            <li>UI / UX</li>
+            <li>Front-End Development</li>
+            <li>GitHub</li>
+            <li>ReactJS</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h5>CONTACT</h5>
+          <p>aindovina2@yahoo.com</p>
+          <p>585.414.8270</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2022 Alex Indovina. Made with &hearts; by me</p>
+    </aside>
+    <main class="main-container">
+      <div class="main-wrap">
+        <!-- For mobile browsers -->
+        <div class="mobile-header">
+          <div class="mobile-header-wrapper">
+            <div class="title">
+              <h1>Alex Indovina</h1>
+              <p>Developer</p>
+            </div>
+            <!-- <button class="sidebar-trigger-btn" aria-label="open-sidebar">
+              <i class="fas fa-user-alt"></i>
+            </button> -->
+          </div>
+        </div>
+        <!-- projects -->
+        <section class="featured-projects">
+          <div class="projects-header">
+            <div class="main-projects-title">
+              <h2>🛠️ Featured Projects</h2>
+              <p>Below are a few of my recent projects</p>
+            </div>
+            <a href="https://github.com/CallMe-AL/" class="github-link">View more on GitHub <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+          </div>
+          <!-- cards -->
+          <div class="cards-wrap">
+            <!-- card -->
+            <article class="card">
+              <div class="card-img-cont">
+                <img src="" alt="" class="card-img">
+              </div>
+              <div class="card-content">
+                <h3>myAPOD</h3>
+                <p>A web app I built using NASA's Astronomy of the Day API to help make the displaying of their data a little prettier. Built with React, React-Router-Dom, SCSS, and Node/Express. It's hosted for free on Heroku, so per their terms and conditions it may take a few seconds to load at first :). </p>
+                <a href="https://my-apod.herokuapp.com/">View Project<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="card">
+              <div class="card-img-cont">
+                <img src="" alt="" class="card-img">
+              </div>
+              <div class="card-content">
+                <h3>Space Station</h3>
+                <p>A (fake?) e-commerce site where you can buy all sorts of celestial objects from around the universe. Built with JavaScript, SCSS, and HTML.</p>
+                <a href="https://callme-al.github.io/space-station/">View Project<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="card">
+              <div class="card-img-cont">
+                <img src="" alt="" class="card-img">
+              </div>
+              <div class="card-content">
+                <h3>Secret Santa Generator</h3>
+                <p>My first app built with React. Generates secret santa pairs based on the names inputted. You can then send links to each person letting them know who they've received. Also, no email required!</p>
+                <a href="https://callme-al.github.io/secret-santa/">View Project<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="card">
+              <div class="card-img-cont">
+                <img src="" alt="" class="card-img">
+              </div>
+              <div class="card-content">
+                <h3>Color Guessing Game</h3>
+                <p>Generates a random RGB color at the top of the screen along with a number of different colored squares. One square is the correct color -- guess which to win! It also keeps track of the user's number of wins and total guesses. Built using JavaScript, CSS, and HTML.</p>
+                <a href="https://callme-al.github.io/color-guessing-game/">View Project<i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- education -->
+        <section class="education">
+          <div class="education-header">
+            <div class="title"><h2>📚 Education</h2></div>
+            <a href="" class="resume-link">View Resume <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <p class="education-desc">My primary background is in history. Web development is self-taught mostly following Mozilla's online course and various YouTubers such as Kevin Powell.</p>
+          <div class="education-cards-wrap">
+            <!-- card -->
+            <article class="education-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>SUNY Brockport</h3>
+                    <p>Master's in History</p>
+                  </div>
+                  <div class="grad-date">2017-2019</div>
+                </div>
+                <p class="card-ed-desc">GPA: 3.88. Awarded the Flieger Fellowship (Spring 2018) and published my thesis entitled <span>Wild West in Upstate New York: Native American Culture, Performances, and Public Debates about Indian Affairs,
+                1880s-1930s</span> in Summer 2019.</p>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="education-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>SUNY Brockport</h3>
+                    <p>Bachelor's in History</p>
+                  </div>
+                  <div class="grad-date">2010-2015</div>
+                </div>
+                <p class="card-ed-desc">GPA: 3.41. Awarded Flieger Family History Award (2014) and 2nd place for the Melinda Kleehamer Senior Seminar Price (2014). Also received Dean's List with Honors (Fall 2012), Dean's List (Spring 2013), and President's List (Fall 2013).</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- experience -->
+        <section class="experience">
+          <div class="experience-header">
+            <h2>👔 Experience</h2>
+            <a href="" class="resume-link">View Resume <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <p class="experience-desc">My work experiences strengthened my customer service, leadership, and analytical skills in various dynamic environments.</p>
+          <div class="experience-cards-wrap">
+            <!-- card -->
+            <article class="experience-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>Wegmans</h3>
+                    <p>Helping Hands Coordinator</p>
+                  </div>
+                  <div class="work-dates">Jan. 2021 - Present</div>
+                </div>
+                <p class="card-exp-desc">Supervised the development of over 20 people in a team-driven environment. I additionally wrote the department schedule and completed quarterly observation reports, yearly reviews, and many other things by a given deadline.</p>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="experience-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>Wegmans</h3>
+                    <p>Produce Clerk</p>
+                  </div>
+                  <div class="work-dates">Nov. 2016 - Jan. 2021</div>
+                </div>
+                <p class="card-exp-desc">Assited with the departments CAO program to analyze and control inventory and shrink levels. Also coordinated across multiple departments to ensure mutual goals were met and exceeded while providing high-quality customer service.</p>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="experience-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>SUNY Brockport</h3>
+                    <p>Writing Tutor</p>
+                  </div>
+                  <div class="work-dates">Aug. 2017 - May 2019</div>
+                </div>
+                <p class="card-exp-desc">Developed measurable action plans to help diverse groups of students achieve individual goals. Focused on organizational, research, and review strategies for writing.</p>
+              </div>
+            </article>
+            <!-- card -->
+            <article class="experience-card">
+              <div class="card-content">
+                <div class="card-title-cont">
+                  <div class="main-card-title">
+                    <h3>SUNY Brockport</h3>
+                    <p>Teaching Assistant</p>
+                  </div>
+                  <div class="work-dates">Aug. 2018 - Dec. 2018</div>
+                </div>
+                <p class="card-exp-desc">Helped supervise undergraduates working on assigned research projects. Offered additional support for students seeking help improving reading, research, and analytical strategies outside the classroom.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
   <script src="app/app.js"></script>
 </body>
 </html>
