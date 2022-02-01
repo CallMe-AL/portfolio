@@ -678,6 +678,15 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .featured-projects .projects-header .main-projects-title {
+    margin-bottom: 20px;
+  }
+  .featured-projects .projects-header .main-projects-title h2 {
+    font-size: 36px;
+  }
+  .featured-projects .projects-header a {
+    font-size: 1rem;
+  }
   .education .education-header h2 {
     font-size: 36px;
   }
