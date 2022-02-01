@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.menu-container');
 const sidebarOverlay = document.querySelector('.sidebar-bg-overlay');
-const sidebar = document.querySelector('.sidebar');
+const sidebar = document.querySelector('.sidebar-container');
 
 menuBtn.addEventListener('click', () => {
   if (!menuBtn.classList.contains('close')) {

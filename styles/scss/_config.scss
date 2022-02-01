@@ -28,7 +28,6 @@ $light-border: #d2d4d6;
 
 @mixin card-styles {
   width: 100%;
-  max-width: 400px;
   border: 1px solid $light-border;
   border-radius: 6px;
   margin-bottom: 60px;
@@ -36,4 +35,16 @@ $light-border: #d2d4d6;
   box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
   -webkit-box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 40px 40px -30px rgba(0, 0, 0, 0.26);
+}
+
+@mixin media-md {
+  @media screen and (min-width: 780px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
 }
