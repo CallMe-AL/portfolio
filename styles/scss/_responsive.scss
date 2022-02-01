@@ -17,6 +17,11 @@
       width: 250px;
       transform: translateX(0);
       left: 0;
+      .inner-sidebar-container {
+        .skills {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
 
@@ -36,10 +41,87 @@
       align-items: center;
     }
 
-    // .cards-wrap {
-    //   .card {
-    //   }
-    // }
+    .cards-wrap {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .card {
+        height: 500px;
+
+        .card-content {
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .education {
+    .education-header {
+      margin-bottom: 12px;
+    }
+    .education-cards-wrap {
+      .education-card {
+        .card-content {
+          .card-title-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 20px;
+
+            .main-card-title {
+              margin-bottom: 0px;
+
+              p {
+                font-size: 1rem;
+              }
+            }
+          }
+
+          .card-ed-desc {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  .experience {
+    .experience-header {
+      margin-bottom: 12px;
+    }
+    .experience-cards-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .experience-card {
+        .card-content {
+          .card-title-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            margin-bottom: 20px;
+
+            .main-card-title {
+              margin-bottom: 0px;
+            }
+          }
+
+          .card-exp-desc {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -52,6 +134,14 @@
       width: 400px;
       transform: translateX(0);
       left: 0;
+
+      .inner-sidebar-container {
+        .main-bio {
+          h1 {
+            font-size: 36px;
+          }
+        }
+      }
     }
   }
 
@@ -60,15 +150,74 @@
       flex-direction: row;
       align-items: center;
     }
+  }
 
-    // .cards-wrap {
-    //   .card {
-    //     .card-content {
-    //       p {
-    //         font-size: 0.9rem;
-    //       }
-    //     }
-    //   }
-    // }
+  .education {
+    .education-header {
+      h2 {
+        font-size: 36px;
+      }
+
+      a {
+        font-size: 1rem;
+      }
+    }
+    .education-cards-wrap {
+      .education-card {
+        .card-content {
+          .card-title-cont {
+            .main-card-title {
+              h3 {
+                font-size: 28px;
+              }
+
+              p {
+                font-size: 1.2rem;
+              }
+            }
+
+            .grad-date {
+              font-size: 1rem;
+            }
+          }
+
+          .card-ed-desc {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .experience {
+    .experience-header {
+      h2 {
+        font-size: 36px;
+      }
+
+      a {
+        font-size: 1rem;
+      }
+    }
+    .experience-cards-wrap {
+      .experience-card {
+        .card-content {
+          .card-title-cont {
+            .main-card-title {
+              h3 {
+                font-size: 36px;
+              }
+              p {
+                font-size: 1.2rem;
+              }
+            }
+          }
+
+          .card-exp-desc {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
 }

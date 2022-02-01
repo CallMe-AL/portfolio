@@ -45,10 +45,12 @@
         .card-title-cont {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
+          flex-direction: column;
           margin-bottom: 20px;
 
           .main-card-title {
+            margin-bottom: 20px;
             p {
               font-size: 0.8rem;
             }
@@ -56,6 +58,7 @@
 
           .work-dates {
             font-size: 0.8rem;
+            font-weight: bold;
           }
         }
 
