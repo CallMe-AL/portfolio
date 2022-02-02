@@ -52,8 +52,8 @@
   color: black;
   background-color: white;
   border-right: 1px solid lightgray;
-  padding: 30px;
-  height: 100%;
+  padding: 3rem;
+  height: 100vh;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   -webkit-transform: translateX(100%);
@@ -103,10 +103,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.sidebar .sidebar-container .inner-sidebar-container .main-bio {
-  margin-bottom: 30px;
 }
 
 .sidebar .sidebar-container .inner-sidebar-container .main-bio h1 {
@@ -665,6 +661,9 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
     left: 0;
+  }
+  .sidebar .sidebar-container .inner-sidebar-container .main-bio {
+    margin-bottom: 30px;
   }
   .sidebar .sidebar-container .inner-sidebar-container .main-bio h1 {
     font-size: 36px;
