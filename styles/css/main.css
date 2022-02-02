@@ -20,6 +20,7 @@
 .sidebar {
   width: 0;
   height: 0;
+  position: relative;
 }
 
 .sidebar .sidebar-btn {
@@ -73,6 +74,7 @@
   top: 0;
   right: 0;
   z-index: 10;
+  overflow-y: auto;
 }
 
 .sidebar .sidebar-container.active {
