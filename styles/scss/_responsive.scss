@@ -128,8 +128,6 @@
 @include media-lg {
   .sidebar {
     width: 400px;
-    height: 100vh;
-    position: relative;
     .sidebar-container {
       width: 400px;
       transform: translateX(0);
@@ -137,7 +135,6 @@
 
       .inner-sidebar-container {
         .main-bio {
-          margin-bottom: 30px;
           h1 {
             font-size: 36px;
           }

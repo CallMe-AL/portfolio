@@ -653,17 +653,12 @@
 @media screen and (min-width: 1200px) {
   .sidebar {
     width: 400px;
-    height: 100vh;
-    position: relative;
   }
   .sidebar .sidebar-container {
     width: 400px;
     -webkit-transform: translateX(0);
             transform: translateX(0);
     left: 0;
-  }
-  .sidebar .sidebar-container .inner-sidebar-container .main-bio {
-    margin-bottom: 30px;
   }
   .sidebar .sidebar-container .inner-sidebar-container .main-bio h1 {
     font-size: 36px;
