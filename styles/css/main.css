@@ -283,6 +283,12 @@
       flex-shrink: 0;
 }
 
+.featured-projects .cards-wrap .card .card-img-cont .card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
 .featured-projects .cards-wrap .card .card-content h3 {
   margin-bottom: 12px;
 }
