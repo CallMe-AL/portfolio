@@ -1,6 +1,6 @@
 .sidebar-bg-overlay {
   transition: opacity 0.3s ease;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -34,7 +34,7 @@
     background-color: white;
     border-right: 1px solid lightgray;
     padding: 3rem;
-    height: 100vh;
+    height: 100%;
     transition: all 0.3s ease-in;
     // for mobile, remove past 600px
     transform: translateX(100%);
