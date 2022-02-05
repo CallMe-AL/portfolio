@@ -28,7 +28,6 @@
   width: 45px;
   aspect-ratio: 1;
   border-radius: 50%;
-  display: inline-block;
   border: none;
   background-color: white;
   -webkit-box-shadow: 0 0 3px #4f5354;
@@ -164,30 +163,8 @@
   position: fixed;
   bottom: 30px;
   right: 7%;
-  width: 45px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  display: inline-block;
-  border: none;
-  background-color: white;
-  -webkit-box-shadow: 0 0 3px #4f5354;
-          box-shadow: 0 0 3px #4f5354;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
   text-align: center;
   color: black;
-}
-
-.main-container .main-wrap .scroll-btn .fas {
-  font-size: 1.2rem;
-}
-
-.main-container .main-wrap .scroll-btn:hover {
-  background-color: lightgray;
-}
-
-.main-container .main-wrap .scroll-btn:active {
-  color: white;
 }
 
 .main-container .main-wrap .scroll-btn .fa-arrow-up {
@@ -195,7 +172,35 @@
 }
 
 .main-container .main-wrap .scroll-btn.show {
-  display: inline-block;
+  width: 45px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  -webkit-box-shadow: 0 0 3px #4f5354;
+          box-shadow: 0 0 3px #4f5354;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-wrap .scroll-btn.show .fas {
+  font-size: 1.2rem;
+}
+
+.main-container .main-wrap .scroll-btn.show:hover {
+  background-color: lightgray;
+}
+
+.main-container .main-wrap .scroll-btn.show:active {
+  color: white;
 }
 
 .main-container .main-wrap .mobile-header {
@@ -222,7 +227,6 @@
   width: 45px;
   aspect-ratio: 1;
   border-radius: 50%;
-  display: inline-block;
   border: none;
   background-color: white;
   -webkit-box-shadow: 0 0 3px #4f5354;

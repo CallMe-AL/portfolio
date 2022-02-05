@@ -13,7 +13,6 @@
       position: fixed;
       bottom: 30px;
       right: 7%;
-      @include btn-styles;
       text-align: center;
       color: black;
 
@@ -22,7 +21,12 @@
       }
 
       &.show {
-        display: inline-block;
+        @include btn-styles;
+
+        // centering for iphones
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
     }
     .mobile-header {
