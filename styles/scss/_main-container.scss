@@ -10,11 +10,18 @@
 
     .scroll-btn {
       display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 7%;
+      @include btn-styles;
+      text-align: center;
+
+      .fas {
+        color: black;
+      }
+
       &.show {
-        position: fixed;
-        bottom: 30px;
-        right: 7%;
-        @include btn-styles;
+        display: inline-block;
       }
     }
     .mobile-header {

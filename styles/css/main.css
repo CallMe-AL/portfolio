@@ -10,6 +10,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
   pointer-events: none;
+  z-index: 9;
 }
 
 .sidebar-bg-overlay.active {
@@ -160,9 +161,6 @@
 
 .main-container .main-wrap .scroll-btn {
   display: none;
-}
-
-.main-container .main-wrap .scroll-btn.show {
   position: fixed;
   bottom: 30px;
   right: 7%;
@@ -176,18 +174,27 @@
           box-shadow: 0 0 3px #4f5354;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  text-align: center;
 }
 
-.main-container .main-wrap .scroll-btn.show .fas {
+.main-container .main-wrap .scroll-btn .fas {
   font-size: 1.2rem;
 }
 
-.main-container .main-wrap .scroll-btn.show:hover {
+.main-container .main-wrap .scroll-btn:hover {
   background-color: lightgray;
 }
 
-.main-container .main-wrap .scroll-btn.show:active {
+.main-container .main-wrap .scroll-btn:active {
   color: white;
+}
+
+.main-container .main-wrap .scroll-btn .fas {
+  color: black;
+}
+
+.main-container .main-wrap .scroll-btn.show {
+  display: inline-block;
 }
 
 .main-container .main-wrap .mobile-header {
