@@ -6,6 +6,17 @@
     width: 85%;
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
+
+    .scroll-btn {
+      display: none;
+      &.show {
+        position: fixed;
+        bottom: 30px;
+        right: 7%;
+        @include btn-styles;
+      }
+    }
     .mobile-header {
       padding-top: 30px;
       padding-bottom: 30px;

@@ -7,7 +7,7 @@ $light-border: #d2d4d6;
 }
 
 @mixin btn-styles {
-  width: 65px;
+  width: 45px;
   aspect-ratio: 1;
   border-radius: 50%;
   display: inline-block;
@@ -23,6 +23,10 @@ $light-border: #d2d4d6;
 
   &:hover {
     background-color: lightgray;
+  }
+
+  &:active {
+    color: white;
   }
 }
 

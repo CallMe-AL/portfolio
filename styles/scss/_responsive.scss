@@ -143,6 +143,17 @@
     }
   }
 
+  .main-container {
+    .main-wrap {
+      .scroll-btn {
+        &.show {
+          width: 55px;
+          bottom: 75px;
+        }
+      }
+    }
+  }
+
   .featured-projects {
     .projects-header {
       flex-direction: row;
